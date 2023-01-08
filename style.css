@@ -1,0 +1,292 @@
+html {
+  font-size: 75%;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+
+  background-image: #2e55bf60 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+p {
+  margin-left: 170px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+h2 {
+  margin-left: 170px;
+}
+
+h3 {
+  margin-left: 170px;
+}
+
+.outer-box-frame {
+  background-color: rgba(255, 255, 255, 0.503);
+  box-shadow: 10px 10px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.capacity {
+  color: rgb(255, 0, 0);
+}
+
+.minSalt {
+  color: rgb(255, 0, 0);
+}
+
+.minBrine {
+  color: rgb(255, 0, 0);
+}
+
+.recovery {
+  color: rgb(255, 0, 0);
+}
+
+.rejection {
+  color: rgb(255, 0, 0);
+}
+
+.res {
+  color: rgb(255, 0, 0);
+}
+
+.btn-total {
+  margin-inline: 170px;
+}
+
+.btn-brine {
+  margin-inline: 170px;
+}
+.btn-rec {
+  margin-inline: 170px;
+}
+.btn-rej {
+  margin-inline: 170px;
+}
+.btn-cond {
+  margin-inline: 170px;
+}
+
+#main {
+  width: 1000px;
+  height: 400px;
+  background-image: URL();
+  background-repeat: no-repeat;
+  box-shadow: 10px 10px;
+  image-resolution: 1000dpi;
+  display: flex;
+  justify-content: center;
+}
+
+#General-Waters-Title {
+  width: 700px;
+  height: 200px;
+  justify-content: center;
+}
+
+.softener {
+  border-collapse: 1px;
+  margin: 10px 170px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  table-layout: fixed;
+}
+.softener thead tr {
+  background-color: #008198;
+  color: #ffffff;
+}
+
+.softener th,
+.softener td {
+  padding: 5px 15px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.softener tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.softener tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.softener tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.softener tbody tr {
+  font-weight: bold;
+  color: #009879;
+}
+
+.brine {
+  border-collapse: 1px;
+  margin: 10px 170px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  table-layout: fixed;
+}
+.brine thead tr {
+  background-color: #008198;
+  color: #ffffff;
+  text-align: left;
+}
+
+.brine th,
+.brine td {
+  padding: 5px 15px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.brine tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.brine tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.brine tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.brine tbody tr {
+  font-weight: bold;
+  color: #009879;
+}
+
+.rec {
+  border-collapse: 1px;
+  margin: 10px 170px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  table-layout: fixed;
+}
+.rec thead tr {
+  background-color: #008198;
+  color: #ffffff;
+  text-align: left;
+}
+
+.rec th,
+.rec td {
+  padding: 5px 15px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.rec tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.rec tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.rec tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.rec tbody tr {
+  font-weight: bold;
+  color: #009879;
+}
+
+.rej {
+  border-collapse: 1px;
+  margin: 10px 170px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  table-layout: fixed;
+}
+.rej thead tr {
+  background-color: #008198;
+  color: #ffffff;
+  text-align: left;
+}
+
+.rej th,
+.rej td {
+  padding: 5px 15px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.rej tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.rej tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.rej tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.rej tbody tr {
+  font-weight: bold;
+  color: #009879;
+}
+
+.condRes {
+  border-collapse: 1px;
+  margin: 10px 170px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  table-layout: fixed;
+}
+.condRes thead tr {
+  background-color: #008198;
+  color: #ffffff;
+  text-align: left;
+}
+
+.condRes th,
+.condRes td {
+  padding: 5px 15px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.condRes tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.condRes tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.condRes tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+tbody tr {
+  font-weight: bold;
+  color: #009879;
+}

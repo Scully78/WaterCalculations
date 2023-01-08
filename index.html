@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <div class="outer-box-frame">
+    <title>Welcome to General Waters</title>
+    
+    
+</head>
+
+<body id="home">
+  
+    <div id="banner">
+      <img  id="main"src="water.png" class="center" >
+     
+    <div>
+      
+<h2>Resin Calculators</h2>
+<h3>Calculating Softener Capacity</h3>
+
+
+
+<table class="softener">
+  <thead>
+    <tr>
+      <th></th>
+      <th>VALUE</th>
+      <th>UNITS</th>
+    </tr>
+  </thead>  
+  <tbody>  
+   
+    <tr>
+      <td>Resin Volume</td>
+      
+      <td><input type="text"class="resin" style="width: 90px"></td>
+      <td>Litres</td>
+    </tr>
+                     
+    </tr>
+      <td> Exchange Capacity </td>
+      <td><input type="text" class="exchange" value="50" style="width: 90px" ></td>
+      <td>   Grams/Litre</td>
+    </tr>
+
+    <tr>          
+      <td>Total Hardness</td>
+      <td><input type="text" class="hardness" style="width: 90px"></td>
+      <td>ppm</td>
+    </tr>
+         
+    <tr>
+      <td>Total Capacity</td>
+      <td><input type="text"  class="capacity" style="width: 90px"></td>
+      <td><span lang="eng-GB">m³</span></td>
+    </tr>
+   
+  </tbody>
+   
+</table> 
+
+  <button type="button" class="btn-total" onclick="softenerCapacity()">Calculate</button>
+  <p>Fleck SXT Timer Capacity Calculation - Resin amount x 5</p>
+<p>Fleck 3200 NXT Timer Capacity Calculation - Resin amount x 50</p><br>
+  
+<h3>Brine Volume Calculation</h3>
+<table class="brine">      
+  <thead>
+    <tr>
+      <th></th>
+      <th>VALUE</th>
+      <th>UNITS</th>
+    </tr>
+  </thead>
+  <tbody>     
+    <tr>
+      <td>Resin Volume</td>
+      <td><input type="text"class="resinVolume" style="width: 100px;"></td>
+      <td>Litres</td>
+    </tr>
+          
+    <tr>
+      <td> Regeneration Level </td>
+      <td><input type="text" class="regenLevel" value="120" style="width: 100px;"></td>
+      <td> Grams/Litre</td>
+    </tr>
+
+    <tr>          
+      <td> Minimum Salt Required</td>
+      <td><input type="text" class="minSalt" style="width: 100px;"></td>
+      <td>kg</td>
+    </tr>
+         
+    <tr>
+      <td> Minimum Brine Volume</td>
+      <td><input type="text"  class="minBrine" style="width: 100px;"></td>
+      <td><span lang="eng-GB">Litres</span></td>
+    </tr>
+
+  </tbody>
+   
+</table>
+  <button type="button" class="btn-brine" onclick="brineCalculation()">Calculate</button><br>
+<br>  
+<h2>RO Calculators</h2>
+<h3>Calculating RO Recovery</h3>
+<table class="rec">  
+  <thead>
+  
+  
+    <tr>
+      <th></th>
+      <th>VALUE</th>
+      <th>UNITS</th>
+    </tr>
+  </thead>     
+  <tbody>     
+    <tr>
+      <td>Feed Flow</td>
+      <td><input type="number"class="feedFlow" style="width: 100px;"></td>
+      <td>l/hr</td>
+    </tr>
+          
+    <tr>
+      <td> Permeate Flow </td>
+      <td><input type="number" class="permFlow" style="width: 100px;"></td>
+      <td>l/hr</td>
+    </tr>
+
+    <tr>
+      <td>RO Recovery</td>
+      <td><input type="text"  class="recovery" style="width: 100px;"></td>
+      <td><span lang="eng-GB">%</span></td>
+    </tr>
+
+  </tbody>
+   
+</table>
+  <button type="button" class="btn-rec" onclick="roRecovery()">Calculate</button><br>
+<br> 
+<h3>Calculating RO Rejection</h3>
+<table class="rej">
+  <thead> 
+  
+    <tr>
+      <th></th>
+      <th>VALUE</th>
+      <th>UNITS</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>Feed Conductivity</td>
+      <td><input type="number"class="feedCond" style="width: 100px;"></td>
+      <td>µS</td>
+    </tr>
+         
+    <tr>
+      <td> Permeate Conductivity </td>
+      <td><input type="number" class="permCond" style="width: 100px;"></td>   
+      <td>µS</td>
+    </tr>
+
+    <tr>
+      <td>RO Rejection</td>
+      <td><input type="number"  class="rejection" style="width: 100px;"></td>
+      <td><span lang="eng-GB">%</span></td>
+    </tr>
+
+  </tbody>
+    
+</table>
+  <button type="button" class="btn-rej" onclick="roRejection()">Calculate</button><br>
+<br> 
+<h3>Conversion from Conductivty to Resistivity</h3>
+<table class="condRes">
+  <thead>
+    <tr>
+      <th></th>
+      <th>VALUE</th>
+      <th>UNITS</th>
+    </tr>
+  </thead>  
+  <tbody>
+    <tr>
+      <td>Conductivity</td>
+      <td><input type="text"class="cond" style="width: 100px;"></td>
+      <td>µS</td>
+    </tr>
+
+    <tr>
+      <td> Resistivity </td>
+      <td><input type="text" class="res" style="width: 100px;"></td>
+      <td>Mohm</td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+  <button type="button" class="btn-cond" onclick="waterQual()">Calculate</button> <br>
+<br>
+  
+<script src="script.js"></script>
+</body>
+</html>
+
