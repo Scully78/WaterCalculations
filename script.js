@@ -99,4 +99,3 @@ const waterQual = function () {
 
   document.querySelector('.res').value = (1 / cond).toFixed(5);
 };
-
